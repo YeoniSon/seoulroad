@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./components/App";
 import HomePage from "./pages/HomePage";
-import FoodPage from "./pages/FoodPage";
-import CulturePage from "./pages/CulturePage";
-import HealingPage from "./pages/HealingPage";
+import FoodListPage from "./pages/FoodListPage";
+import CultureListPage from "./pages/CultureListPage";
+import HealingListPage from "./pages/HealingListPage";
 import MyPage from "./pages/MypagePage";
 import LoginPage from "./pages/LoginPage";
 
@@ -14,9 +14,9 @@ function Main() {
         <Routes>
           <Route path="/">
             <Route index element={<HomePage />} />
-            <Route path="food" element={<FoodPage />} />
-            <Route path="culture" element={<CulturePage />} />
-            <Route path="healing" element={<HealingPage />} />
+            <Route path="food" element={<FoodListPage />} />
+            <Route path="culture" element={<CultureListPage />} />
+            <Route path="healing" element={<HealingListPage />} />
             <Route path="mypage" element={<MyPage />} />
             <Route path="login" element={<LoginPage />} />
           </Route>
