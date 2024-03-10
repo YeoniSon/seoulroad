@@ -2,11 +2,11 @@ import Footer from "./Footer";
 import Header from "./Header";
 import sytles from "./App.module.css";
 
-function App() {
+function App({ children }) {
   return (
     <>
       <Header className={sytles.nav} />
-      <div className={sytles.body}></div>
+      <div className={sytles.body}>{children}</div>
       <Footer className={sytles.footer} />
     </>
   );

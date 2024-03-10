@@ -6,6 +6,8 @@ import CultureListPage from "./pages/CultureListPage";
 import HealingListPage from "./pages/HealingListPage";
 import MyPage from "./pages/MypagePage";
 import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
+import AdminPage from "./pages/AdminPage";
 
 function Main() {
   return (
@@ -19,6 +21,8 @@ function Main() {
             <Route path="healing" element={<HealingListPage />} />
             <Route path="mypage" element={<MyPage />} />
             <Route path="login" element={<LoginPage />} />
+            <Route path="signup" element={<SignUpPage />} />
+            <Route path="admin" element={<AdminPage />} />
           </Route>
         </Routes>
       </App>
