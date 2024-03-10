@@ -1,0 +1,39 @@
+.userMenu {
+  position: relative;
+}
+
+.iconButton img {
+  width: 50px;
+}
+
+.iconButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+ul.popup {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: -5px;
+  border: 1px solid #ebebeb;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px 0 5px 5px;
+  overflow: hidden;
+}
+
+ul.popup li {
+  padding: 15px 19px;
+  font-family: var(--noto-sans);
+}
+
+ul.popup li:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}

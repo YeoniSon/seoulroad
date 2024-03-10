@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  box-sizing: border-box;
+  position: absolute;
+  height: 141px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #494949;
+  text-decoration: none;
+}
+
+.nav,
+.footer {
+  flex: none;
+}
+
+.body {
+  position: relative;
+  flex-grow: 1;
+}
