@@ -12,12 +12,14 @@ function Main() {
     <BrowserRouter>
       <App>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/food" element={<FoodPage />} />
-          <Route path="/culture" element={<CulturePage />} />
-          <Route path="/healing" element={<HealingPage />} />
-          <Route path="/mypage" element={<MyPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/">
+            <Route index element={<HomePage />} />
+            <Route path="food" element={<FoodPage />} />
+            <Route path="culture" element={<CulturePage />} />
+            <Route path="healing" element={<HealingPage />} />
+            <Route path="mypage" element={<MyPage />} />
+            <Route path="login" element={<LoginPage />} />
+          </Route>
         </Routes>
       </App>
     </BrowserRouter>
