@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 570px;
 }
 
 h1 {
   font-size: 48px;
   text-align: center;
+  color: #6a7efc;
 }
 
 input,
@@ -17,9 +19,12 @@ select,
   height: 50px;
   margin: 10px 0;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 18px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #aaaaaa 1px;
 }
 
 .signup {
@@ -41,7 +46,6 @@ select,
   margin: 10px 0;
   margin-right: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 18px;
 }
