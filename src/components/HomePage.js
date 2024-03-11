@@ -1,21 +1,23 @@
 import { useCallback, useState } from "react";
-import styles from "./HomePage.module.css";
-import more from "./assets/more.png";
-import next from "./assets/next.png";
-import prev from "./assets/prev.png"
+import ImageSlider from "./ImageSlider";
 
-import 칼국수 from "./assets/강릉형제장칼국수.jpg";
-import 경복궁 from "./assets/경복궁.jpg";
-import 광화문 from "./assets/광화문.jpg";
-import 금고깃집 from "./assets/금고깃집.jpg";
-import 도봉산 from "./assets/도봉산.jpg";
-import 망우산 from "./assets/망우산.jpg";
-import 봉화산 from "./assets/봉화산.jpg";
-import 서울숲 from "./assets/서울숲.jpg";
-import 수구레 from "./assets/원조수구레.jpg";
-import 이태원 from "./assets/이태원.jpg";
-import 팔오삼 from "./assets/팔오삼.jpg";
-import 세종대왕 from "./assets/세종대왕.JPG"
+import styles from "./HomePage.module.css";
+import more from "../assets/more.png";
+import next from "../assets/next.png";
+import prev from "../assets/prev.png"
+
+import 칼국수 from "../assets/강릉형제장칼국수.jpg";
+import 경복궁 from "../assets/경복궁.jpg";
+import 광화문 from "../assets/광화문.jpg";
+import 금고깃집 from "../assets/금고깃집.jpg";
+import 도봉산 from "../assets/도봉산.jpg";
+import 망우산 from "../assets/망우산.jpg";
+import 봉화산 from "../assets/봉화산.jpg";
+import 서울숲 from "../assets/서울숲.jpg";
+import 수구레 from "../assets/원조수구레.jpg";
+import 이태원 from "../assets/이태원.jpg";
+import 팔오삼 from "../assets/팔오삼.jpg";
+import 세종대왕 from "../assets/세종대왕.JPG"
 
 const HomePage = () => {
   const onVectorIconClick = useCallback(() => {
@@ -46,6 +48,8 @@ const HomePage = () => {
 
 
   return (
+    <>
+    <ImageSlider />
     <main className={styles.main}>
       <div className={styles.main1}>
         <div className={styles.div}>
@@ -245,6 +249,7 @@ const HomePage = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
