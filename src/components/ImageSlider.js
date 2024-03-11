@@ -5,10 +5,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
 
 const topImg = [
-  { src: 'asset/image/mainSlide1.jpg', alt: 'image 1' },
-  { src: 'asset/image/mainSlide2.jpg', alt: 'image 2' },
-  { src: 'asset/image/mainSlide3.jpg', alt: 'image 3' },
-  { src: 'asset/image/mainSlide4.jpg', alt: 'image 4' },
+  { src: '/img/mainSlide1.jpg', alt: 'image 1' },
+  { src: '/img/mainSlide2.jpg', alt: 'image 2' },
+  { src: '/img/mainSlide3.jpg', alt: 'image 3' },
+  { src: '/img/mainSlide4.jpg', alt: 'image 4' },
 ];
 
 
@@ -33,6 +33,9 @@ function PrevArrow(props) {
 }
 
 const SlickContainer = styled.div`
+  .slick-slider img {
+    width:auto;
+  }
   .slick-prev:hover,
   .slick-prev:focus,
   .slick-next:hover,
@@ -87,7 +90,7 @@ const SlickContainer = styled.div`
     position: absolute;
     width: 33px;
     height: 61px;
-    background-image: url(asset/image/arrow.png);
+    background-image: url(/img/arrow.png);
     top: 50%;
     left: 50%;
     color: #fff;
@@ -99,7 +102,7 @@ const SlickContainer = styled.div`
     position: absolute;
     width: 33px;
     height: 61px;
-    background-image: url(asset/image/arrow.png);
+    background-image: url(/img/arrow.png);
     top: 50%;
     left: 50%;
     color: #fff;
