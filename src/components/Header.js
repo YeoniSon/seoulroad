@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import logoImg from "../images/logo.png";
 import UserMenu from "./UserMenu";
 import styles from "./Header.module.css";
@@ -40,6 +40,7 @@ function Header() {
             <UserMenu />
           </li>
         </ul>
+        <Outlet />
       </div>
     </div>
   );
