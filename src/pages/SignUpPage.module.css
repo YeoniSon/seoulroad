@@ -28,6 +28,13 @@ select,
   cursor: pointer;
 }
 
+.idbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .id {
   width: 500px;
   height: 50px;
@@ -42,7 +49,6 @@ select,
 .checkbox {
   width: 60px;
   height: 50px;
-  margin: 10px 0;
   background-color: #6a7efc;
   border-radius: 5px;
   border: none;

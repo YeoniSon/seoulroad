@@ -1,0 +1,80 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+input,
+.addButton {
+  display: flex;
+  width: 570px;
+  flex-direction: column;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.addButton {
+  justify-content: center;
+  background-color: #6a7efc;
+  color: white;
+  align-items: center;
+}
+
+.loginButton {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  background-color: #6a7efc;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.customList {
+  overflow-y: scroll;
+}
+
+h3 {
+  margin: 20px 0;
+}
+.customList button {
+  width: 50px;
+  height: 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.link span {
+  color: white;
+  font-size: 15px;
+}
+
+table {
+  overflow: scroll;
+  width: 1000px;
+  text-align: center;
+}
+
+.remove {
+  background-color: #f11515;
+  color: white;
+}
+
+.edit {
+  background-color: #6a7efc;
+  color: white;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dummyData from "../api/dummyData";
 import { Link } from "react-router-dom";
+import styles from "./LoginPage.module.css";
 
 function LoginPage(props) {
   const [username, setUsername] = useState("");
@@ -18,12 +19,13 @@ function LoginPage(props) {
   };
 
   return (
-    <>
-      <h2>로그인</h2>
+    <div className={styles.container}>
+      <h2>Login</h2>
 
       <div className="form">
         <div>
           <input
+            required
             type="text"
             name="username"
             placeholder="Username"
@@ -43,12 +45,11 @@ function LoginPage(props) {
           />
         </div>
         <button onClick={handleLogin}>로그인</button>
-        <div>
-          <p>계정이 없으신가요?</p>
-          <Link to={"/signup"}>SignUp</Link>
+        <div className={styles.signup}>
+          Don't have an account? <Link to={"/signup"}>SignUp</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

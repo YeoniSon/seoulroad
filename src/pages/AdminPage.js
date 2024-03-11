@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import dummyData from "../api/dummyData";
+import styles from "./AdminPage.module.css";
+import { Link } from "react-router-dom";
 
 function AdminPage(props) {
   const [users, setUsers] = useState(dummyData);
@@ -11,10 +13,6 @@ function AdminPage(props) {
     registration_date: "",
     role: "회원", // 기본값으로 회원 설정
   });
-
-  const handleLogout = () => {
-    props.setMode("LOGIN");
-  };
 
   const handleAddUser = () => {
     // 모든항목을 필수 입력사항으로
@@ -52,7 +50,7 @@ function AdminPage(props) {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <h2>관리자용 패널</h2>
       <div>
         <h3>추가</h3>
@@ -88,9 +86,11 @@ function AdminPage(props) {
             setNewUser({ ...newUser, registration_date: e.target.value })
           }
         />
-        <button onClick={handleAddUser}>추가</button>
+        <button className={styles.addButton} onClick={handleAddUser}>
+          추가
+        </button>
       </div>
-      <div>
+      <div className={styles.customList}>
         <h3>회원 목록</h3>
         <table>
           <thead>
@@ -114,10 +114,14 @@ function AdminPage(props) {
                 <td>{user.registration_date}</td>
                 <td>{user.role}</td>
                 <td>
-                  <button onClick={() => handleRemoveUser(user.id)}>
+                  <button
+                    className={styles.remove}
+                    onClick={() => handleRemoveUser(user.id)}
+                  >
                     삭제
                   </button>
                   <button
+                    className={styles.edit}
                     onClick={() => {
                       const updatedUser = {
                         name: prompt("Enter new name", user.name),
@@ -141,8 +145,12 @@ function AdminPage(props) {
           </tbody>
         </table>
       </div>
-      <button onClick={handleLogout}>로그인 창으로 이동</button>
-    </>
+      <button className={styles.loginButton}>
+        <Link className={styles.link} to="/login">
+          <span>로그인 페이지로 이동</span>
+        </Link>
+      </button>
+    </div>
   );
 }
 
