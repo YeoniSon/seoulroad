@@ -34,6 +34,7 @@ input,
   background-color: #6a7efc;
   color: white;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .loginButton {
