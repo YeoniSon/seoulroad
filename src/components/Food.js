@@ -1,7 +1,6 @@
 import foodData from "../api/food.json";
 
 export default function Food() {
-  console.log(foodData);
   return (
     <>
       <ul>
