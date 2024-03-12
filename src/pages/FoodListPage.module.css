@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.titlename {
+  margin-top: 40px;
+}
+
+.spans {
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid #6a7efc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.food {
+  color: #6a7efc;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  margin-top: 30px;
+  border-radius: 5px;
+  border-bottom: 1px solid #e2dcdc;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.imgs {
+  width: 160px;
+  height: 107px;
+  border-radius: 10px;
+}
+
+.detail {
+  width: 80%;
+  margin-left: 50px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.address {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #797676;
+}

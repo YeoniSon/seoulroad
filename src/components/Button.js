@@ -1,6 +1,7 @@
 import { useState } from "react";
 import unbookmark from "../images/bookmark/unbookmark.png";
 import bookMark from "../images/bookmark/bookmark.png";
+import styles from "./Button.module.css";
 
 function Button() {
   const [bookmark, setBookmark] = useState(unbookmark);
@@ -13,8 +14,8 @@ function Button() {
   };
 
   return (
-    <button onClick={handleBookmarkClick}>
-      <img src={bookmark} alt="bookmark" />
+    <button className={styles.Button} onClick={handleBookmarkClick}>
+      <img className={styles.img} src={bookmark} alt="bookmark" width="50px" />
     </button>
   );
 }

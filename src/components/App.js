@@ -1,7 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import sytles from "./App.module.css";
-import Food from "./Food";
 
 function App({ children }) {
   return (

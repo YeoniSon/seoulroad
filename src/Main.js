@@ -8,7 +8,9 @@ import FoodListPage from "./pages/FoodListPage";
 import HomePage from "./pages/HomePage";
 import CultureListPage from "./pages/CultureListPage";
 import HealingListPage from "./pages/HealingListPage";
-import DetialPage from "./pages/DetailPage";
+import FoodDetailPage from "./pages/FoodDetailPage";
+import HealingDetailPage from "./pages/HealingDetailPage";
+import CultureDetailPage from "./pages/CultureDetailPage";
 import MyPage from "./pages/Mypage";
 
 function Main() {
@@ -19,11 +21,11 @@ function Main() {
           <Route path="/" element={<ElseRoute />} />
           <Route index element={<HomePage />} />
           <Route path="food" element={<FoodListPage />} />
-          <Route path="/food/:명칭" element={<DetialPage />} />
+          <Route path="food/:name" element={<FoodDetailPage />} />
           <Route path="culture" element={<CultureListPage />} />
-          <Route path="/culture/:명칭" element={<DetialPage />} />
+          <Route path="culture/:name" element={<CultureDetailPage />} />
           <Route path="healing" element={<HealingListPage />} />
-          <Route path="/healing/:명칭" element={<DetialPage />} />
+          <Route path="healing/:name" element={<HealingDetailPage />} />
           <Route path="mypage" element={<MyPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />

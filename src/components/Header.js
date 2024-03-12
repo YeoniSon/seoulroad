@@ -13,7 +13,7 @@ function Header() {
     <div className={styles.nav}>
       <div className={styles.container}>
         <Link to={"/"}>
-          <img src={logoImg} alt="로고이미지"></img>
+          <img className={styles.imgs} src={logoImg} alt="로고이미지"></img>
         </Link>
         <ul className={styles.menu}>
           <li>
