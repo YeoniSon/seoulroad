@@ -3,8 +3,8 @@
   word-break: keep-all;
 }
 .body {
-  overflow-y: scroll;
-  height: 120vh;
+  /* overflow-y: scroll;
+  height: 120vh; */
 }
 
 body {
