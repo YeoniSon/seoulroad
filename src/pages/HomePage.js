@@ -1,4 +1,5 @@
-import { useCallback } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider";
 
 import styles from "./HomePage.module.css";
@@ -20,32 +21,6 @@ import 팔오삼 from "../assets/팔오삼.jpg";
 import 세종대왕 from "../assets/세종대왕.JPG";
 
 const HomePage = () => {
-  const onVectorIconClick = useCallback(() => {
-    // Please sync "먹거리" to the project
-  }, []);
-
-  const onLinkImageClick = useCallback(() => {
-    // Please sync "상세페이지" to the project
-  }, []);
-
-  const onVectorIcon2Click = useCallback(() => {
-    // Please sync "볼거리" to the project
-  }, []);
-
-  const onVectorIcon3Click = useCallback(() => {
-    // Please sync "힐링" to the project
-  }, []);
-
-  // const [slideIndex, setSlideIndex] = useState(0);
-
-  const onNextClickLeft = useCallback(() => {
-    // setSlideIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
-  }, []);
-
-  const onNextClickRight = useCallback(() => {
-    // setSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  }, []);
-
   return (
     <>
       <ImageSlider />
@@ -62,14 +37,9 @@ const HomePage = () => {
                       <span> 🍽️</span>
                     </span>
                   </b>
-                  <div className={styles.div1}>
-                    <img
-                      className={styles.child}
-                      alt=""
-                      src={more}
-                      onClick={onVectorIconClick}
-                    />
-                  </div>
+                  <Link to={"/food"} className={styles.div1}>
+                    <img className={styles.child} alt="" src={more} />
+                  </Link>
                 </div>
                 <div className={styles.divswiper}>
                   <div className={styles.before} />
@@ -77,14 +47,8 @@ const HomePage = () => {
                     className={styles.buttonNextSlideLeft}
                     alt=""
                     src={prev}
-                    onClick={onNextClickLeft}
                   />
-                  <img
-                    className={styles.linkIcon}
-                    alt=""
-                    src={팔오삼}
-                    onClick={onLinkImageClick}
-                  />
+                  <img className={styles.linkIcon} alt="" src={팔오삼} />
                   <div className={styles.link}>
                     <b className={styles.b}>팔오삼</b>
                   </div>
@@ -114,12 +78,7 @@ const HomePage = () => {
                   </div>
                   <div className={styles.before} />
                   <div className={styles.after} />
-                  <img
-                    className={styles.buttonNextSlide}
-                    alt=""
-                    src={next}
-                    onClick={onNextClickRight}
-                  />
+                  <img className={styles.buttonNextSlide} alt="" src={next} />
                 </div>
               </div>
               <div className={styles.section}>
@@ -131,12 +90,9 @@ const HomePage = () => {
                       <span> 🧐</span>
                     </span>
                   </b>
-                  <img
-                    className={styles.child}
-                    alt=""
-                    src={more}
-                    onClick={onVectorIcon2Click}
-                  />
+                  <Link to={"/culture"} className={styles.div1}>
+                    <img className={styles.child} alt="" src={more} />
+                  </Link>
                 </div>
                 <div className={styles.divswiper}>
                   <div className={styles.before} />
@@ -144,7 +100,6 @@ const HomePage = () => {
                     className={styles.buttonNextSlideLeft}
                     alt=""
                     src={prev}
-                    onClick={onNextClickLeft}
                   />
                   <img className={styles.linkIcon4} alt="" src={이태원} />
                   <div className={styles.link}>
@@ -188,12 +143,9 @@ const HomePage = () => {
                       <span> 🍃</span>
                     </span>
                   </b>
-                  <img
-                    className={styles.child}
-                    alt=""
-                    src={more}
-                    onClick={onVectorIcon3Click}
-                  />
+                  <Link to={"/healing"} className={styles.div1}>
+                    <img className={styles.child} alt="" src={more} />
+                  </Link>
                 </div>
                 <div className={styles.divswiper}>
                   <div className={styles.before} />
@@ -201,7 +153,6 @@ const HomePage = () => {
                     className={styles.buttonNextSlideLeft}
                     alt=""
                     src={prev}
-                    onClick={onNextClickLeft}
                   />
                   <img className={styles.linkIcon4} alt="" src={봉화산} />
                   <div className={styles.link}>
