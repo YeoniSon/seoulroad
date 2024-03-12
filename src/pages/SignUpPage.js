@@ -14,8 +14,10 @@ function SignUpPage() {
   const checkIdClick = () => {
     if (dummyData.find((user) => user.id === id)) {
       setIdAvailable(false);
+      alert("이미 존재하는 아이디입니다.");
     } else {
       setIdAvailable(true);
+      alert("사용 가능한 아이디입니다.");
     }
   };
 
@@ -45,7 +47,6 @@ function SignUpPage() {
     // dummyData 배열의 복사본을 만들고 그것을 수정하여 상태를 변경합니다.
     const updatedDummyData = [...dummyData];
     updatedDummyData.push(newUser);
-    console.log(updatedDummyData);
 
     // 상태 업데이트
     dummyData(updatedDummyData);

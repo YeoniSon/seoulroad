@@ -1,12 +1,8 @@
-import React from "react";
-
-const Mypage = () => {
+function Mypage() {
   return (
     <div>
-      <h1>Mypage</h1>
-      {/* Add your content here */}
+      <h2>Mypage</h2>
     </div>
   );
-};
-
+}
 export default Mypage;
